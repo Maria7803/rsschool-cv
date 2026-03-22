@@ -1,3 +1,8 @@
+---
+layout: default
+title: My CV
+---
+
 # Maria Nazmutdinova #
 ## My Contact Info: ##
 * **Phone:** +7 (929) 727-78-03 

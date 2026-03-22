@@ -1,8 +1,3 @@
----
-layout: default
-title: My CV
----
-
 # Maria Nazmutdinova #
 ## My Contact Info: ##
 * **Phone:** +7 (929) 727-78-03 
@@ -17,7 +12,7 @@ I'm 30 years old and work as a lawyer. My profession doesn't bring me any satisf
 * CSS/SASS
 * Git
 ## Code Example ##
-``` 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

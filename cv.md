@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Maria Nazmutdinova #
 ## My Contact Info: ##
 * **Phone:** +7 (929) 727-78-03 
@@ -11,7 +15,7 @@ I'm 30 years old and work as a lawyer. My profession doesn't bring me any satisf
 * HTML
 * CSS/SASS
 * Git
-## Code Example ##
+<!-- ## Code Example ##
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +28,7 @@ I'm 30 years old and work as a lawyer. My profession doesn't bring me any satisf
     <script>alert('Hello,world!')</script>
 </body>
 </html>
-``` 
+``` -->
 
 ## Education ##
 * **University:** Kazan Federal University, jurisprudence

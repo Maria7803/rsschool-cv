@@ -131,20 +131,26 @@ html {
     width: 100% ;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: normal;
-    background-color: rgba(80, 122, 95, 0.314);
-   
+    background-color: rgba(80, 122, 95, 0.314); 
 }
 
-.footer-links {
+.footer-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-
-}
-
-.footer-list-style {
     list-style-type: none;
+    gap: 15px;
 }
+
 .footer-img-style {
     width: auto;
     height: 40px;
+    filter: invert(38%) sepia(11%) saturate(1045%) hue-rotate(85deg) brightness(95%) contrast(86%);
+}
+
+.footer-name {
+    color: #516654ec;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0;
 }

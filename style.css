@@ -134,3 +134,17 @@ html {
     background-color: rgba(80, 122, 95, 0.314);
    
 }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-list-style {
+    list-style-type: none;
+}
+.footer-img-style {
+    width: auto;
+    height: 40px;
+}

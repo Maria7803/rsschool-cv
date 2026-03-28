@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/RobotoThin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/RobotoRegular.ttf");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000b1;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.photo-container {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding: 10px;
+
+}
+
+.photo-container img {
+    width: 100%;   
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-link {
+    padding: 0 15px;
+    line-height: 20px;
+    color: #51665497;
+
+}
+
+.nav-link:hover {
+     transition: 0.3s;
+     background-color: #89b08f97;
+     color: rgb(14, 82, 49);
+     border-radius: 5px; 
+    
+}
+
+.contact-list {
+    color: #516654ec;
+}
+
+.contact-link {
+    color: #37533cf9;
+}
+
+.contact-link:hover {
+    background-color: #89b08f97;
+    color: rgb(14, 82, 49);
+    border-radius: 5px;  
+
+}
+
+.title {
+    color: #516654ec;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.section {
+  width: 50%;
+  padding: 30px 20px; 
+  margin: 0 auto;
+
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #516654ec;
+}
+.code-block { 
+    width: 100% ;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: normal;
+    background-color: rgba(80, 122, 95, 0.314); 
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.footer-img-style {
+    width: auto;
+    height: 40px;
+    filter: invert(38%) sepia(11%) saturate(1045%) hue-rotate(85deg) brightness(95%) contrast(86%);
+}
+
+.footer-name {
+    color: #516654ec;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0;
+}

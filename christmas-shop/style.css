@@ -1,4 +1,278 @@
-.logo-container {
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-VariableFont.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Allura" ;
+    src: url(fonts/Allura/Allura-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 1440px;
+    height: 3360px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0,05em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
+}
+  
+
+.head_container{
+    margin-left: 82px;
+    margin-right: 82px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+.snowflake_logo {
     width: 24px;
     height: 24px;
+
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    gap: 8px;
+
+
+}
+.logo-container {
+    padding: 8px 20px;
+    display: flex;
+
+}
+
+
+.logo-link_item {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+span {
+   width: auto;
+}
+.container_nav {
+     display: flex;
+     flex-grow: 1;
+     justify-content: flex-end;
+     align-items: center;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     
+}
+ul { 
+   
+    display: flex;
+    list-style: none;
+    gap: 8px;
+
+  
+}
+
+.nav-link_item {
+    color: black;
+    text-decoration: none;
+    
+    border-radius: 12px;
+    padding: 12px 20px;
+
+}
+.nav-link_item:hover {
+    background-color: #ff46463d;
+    color: #ff4646;
+}
+.nav_item {
+    font-size: 32px;
+}
+
+.hero_section {
+    background-color: #ff4646;
+    background-image: url(assets/bg-snow.png), url('assets/bg-balls.png');
+    background-size: contain;
+    background-position: center center;
+    background-size:cover, contain;
+    background-repeat: no-repeat, no-repeat;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+ 
+}
+.hero_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:60px 507px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+   
+}
+
+.hs_text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+ 
+}
+
+
+.hs_text p {
+    font-family: Allura;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+   
+
+}
+
+.home_button {
+    padding: 20px 32px;
+    font-family: "Montserrat";
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+}
+
+.home_button:hover {
+    background-color: white;
+    color: black;
+}
+
+.about_section {
+    background-color: #ff4646;
+    background-image: url(assets/bg-snow.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+    
+}
+
+.about_container {
+    margin: 60px 82px;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    justify-content:space-between;
+    align-self: center;
+    flex: 1;
+
+
+}
+.about_container_text_item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.AC_text {
+   justify-content: start;
+   align-items: start;
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+   
+   
+
+}
+
+.red {
+    font-family: "Allura";
+    color: #ff4646;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.AS_text p {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.48;
+}
+
+.about_container_img {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: end;
+      
 }

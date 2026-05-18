@@ -4,23 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>christmas-shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo-container" ></div>
-        <img src="assets/snowflake.svg" alt="snowflake logo">
-        <nav class="container nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#gifts" class="nav-link">GIFTS</a></li>
-                <li class="nav-item">ABOUT</li>
-                <li class="nav-item">BEST</li>
-                <li class="nav-item">CONTACTS</li>
-            </ul>
-
-        </nav>
+        <div class="head_container">
+            <div class="logo-container" >
+                <a href="#gifts" class="logo-link_item">
+                    <img src="assets/snowflake.svg" alt="snowflake logo" class="snowflake_logo"> 
+                    <span>THE GIFTS</span>
+                </a>
+            </div>
+            <nav class="container_nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#gifts" class="nav-link_item">GIFTS</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link_item">ABOUT</a></li>
+                    <li class="nav-item"><a href="#best" class="nav-link_item">BEST</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link_item">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="section" id="gifts"></section>
+            <section class="hero_section">
+                <div class="hero_container">
+                    <div class="hs_text">
+                        <p>Merry Christmas</p>
+                        <h1>Gift yourself <br> the magic of new <br>possibilities</h1>
+                        <button class="home_button">Explore Magical Gifts</button>
+                        <p>and Happy New Year</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="about_section" id="about">
+                <div class="about_container">
+                    <div class="about_container_text_item">
+                        <div class="AC_text">
+                            <p class="red">About</p>
+                            <h2>Unleash your inner<br> superhero!</h2>
+                            <p>This New Year marks the beginning of your journey <br>
+                                to inner harmony and new strengths. We offer <br>
+                                unique gifts that will help you improve your life.</p>
+                        </div>
+                    </div>
+                    <div class="about_container_img">
+                        <img src="assets/santa.png" alt="santa">
+                    </div>
+                
+                </div>
+            </section>
+            <section class="section" id="gifts"></section>
+            <section class="section" id="best"></section>
+            <section class="section" id="contacts"> </section>
+
       
     </main>
     <footer></footer>

@@ -12,7 +12,9 @@
     font-style: normal;
 }
 
-
+*. {
+    box-sizing: border-box;
+}
 h1, p, ul {
     margin: 0;
     padding: 0;
@@ -34,10 +36,11 @@ p {
 
 
 body {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
+    
 }
 
 header {
@@ -49,7 +52,7 @@ header {
     font-size: 12px;
     font-weight: 600;
     line-height: 130%;
-    letter-spacing: 0,05em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -157,6 +160,7 @@ ul {
     padding:60px 507px;
     margin-top: 60px;
     margin-bottom: 60px;
+    box-sizing: border-box;
   
    
 }
@@ -278,13 +282,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   
   
 }
 .slider_container {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     padding: 60px 82px;
     box-sizing: border-box;
     gap: 20px;
@@ -294,8 +299,6 @@ h2 {
 
 .slider_container_text {
     color: white;
-    justify-content:center;
-    align-items: flex-start;
     text-align: center;
     gap: 12px;
 }
@@ -306,10 +309,8 @@ h2 {
     align-items: center;
     max-width: max-content;
     height: 200px;
-  
+   
 
- 
-    
 }
 
 .slider span {
@@ -324,10 +325,7 @@ h2 {
 
 .slider_container_row {
    width: 100%;
-
-   overflow: hidden;
-  
-    
+    overflow: visible;
     
 
 }

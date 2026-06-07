@@ -12,12 +12,10 @@
     font-style: normal;
 }
 
-*. {
-    box-sizing: border-box;
-}
-h1, p, ul {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 p.caption {
     font-family: Allura;
@@ -43,7 +41,7 @@ body {
     
 }
 
-header {
+.header {
     width: 100%;
     height: 64px;
     padding-left: 8px;
@@ -385,7 +383,8 @@ background:transparent;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px 82px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     gap: 20px;
 }
 .best_gifs_container_text {
@@ -413,7 +412,7 @@ background:transparent;
     flex-direction: column;
     width: 310px;
     height: 342px;
-    background-color: aliceblue;
+    background-color: #ecf3f8;;
     border-radius: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -499,7 +498,8 @@ h3 {
 
 }
 .CTA_container {
-    margin: 60px 82px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
@@ -559,4 +559,88 @@ h3 {
 .separation {
     height: 20px;
     border: 1px solid #ffffff40 ;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.footer__data {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.h3 {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.52;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container {
+    margin: 60px 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 60px;
+
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 12px;
+    font-style: normal; 
+       
+}
+
+.footer__contacts-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background-color: #ecf3f8;
+    border-radius: 20px;
+
+
+
+}
+
+.footer__contacts-img {
+    width: 80px;
+    height: 80px;
+
+
+
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 }

@@ -44,9 +44,7 @@ body {
 .header {
     width: 100%;
     height: 64px;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 12px;
     font-weight: 600;
     line-height: 130%;
@@ -59,12 +57,12 @@ body {
   
 
 .head_container{
-    margin-left: 82px;
-    margin-right: 82px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    max-width: 1276px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-grow: 1;
+    align-items: center;
     gap: 12px;
 }
 
@@ -74,22 +72,20 @@ body {
 
 }
 
-a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start ;
-    gap: 8px;
-
-
-}
 .logo-container {
-    padding: 8px 20px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
 
 .logo-link_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    gap: 8px;
+    padding: 8px 20px;
     color: black;
     text-decoration: none;
     text-align: center;
@@ -104,8 +100,7 @@ span {
      flex-grow: 1;
      justify-content: flex-end;
      align-items: center;
-     padding-top: 12px;
-     padding-bottom: 12px;
+    
      
 }
 ul { 
@@ -120,7 +115,6 @@ ul {
 .nav-link_item {
     color: black;
     text-decoration: none;
-    
     border-radius: 12px;
     padding: 12px 20px;
 
@@ -205,6 +199,7 @@ h1 {
 .about_section {
     background-color: #ff4646;
     background-image: url(assets/bg-snow.png);
+    background-size: cover;
     background-position: center;
     width: 100%;
     display: flex;
@@ -279,6 +274,7 @@ h2 {
    background-color: #ff4646;
    width: 100%;
     background-image: url(assets/bg-snow.png);
+    background-size:contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,6 +370,7 @@ background:transparent;
     background-color: #ff4646;
     background-image: url(assets/bg-snow.png);
     background-size: cover;
+    background-position: center;
     width: 100%;
     display: flex;
     justify-content: center;

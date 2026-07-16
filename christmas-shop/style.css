@@ -17,6 +17,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-red: #ff4646;       
+    --site-white: #FFFFFF;
+}
 p.caption {
     font-family: Allura;
     font-size: 24px;
@@ -34,7 +39,8 @@ p {
 
 
 body {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
@@ -121,14 +127,14 @@ ul {
 }
 .nav-link_item:hover {
     background-color: #ff46463d;
-    color: #ff4646;
+    color: var(--main-red);
 }
 .nav_item {
     font-size: 32px;
 }
 
 .hero_section {
-    background-color: #ff4646;
+    background-color: var(--main-red);
     background-image: url(assets/bg-snow.png), url('assets/bg-balls.png');
     background-position: center center;
     background-size:cover, contain;
@@ -155,7 +161,7 @@ ul {
 }
 
 .hs_text {
-    color: white;
+    color: var(--site-white);
     display: flex;
     padding-top:60px;
     padding-bottom: 60px;
@@ -184,7 +190,7 @@ h1 {
     padding: 20px 32px;
     font-family: "Montserrat";
     background-color: black;
-    color: white;
+    color: var(--site-white);
     text-transform: uppercase;
     font-weight: 400;
     border: none;
@@ -192,12 +198,12 @@ h1 {
 }
 
 .home_button:hover {
-    background-color: white;
+    background-color: var(--site-white);
     color: black;
 }
 
 .about_section {
-    background-color: #ff4646;
+    background-color: var(--main-red);
     background-image: url(assets/bg-snow.png);
     background-size: cover;
     background-position: center;
@@ -217,7 +223,7 @@ h1 {
     margin: 60px auto;
     display: flex;
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--site-white);
     justify-content:space-between;
     align-self: center;
     flex: 1;
@@ -245,7 +251,7 @@ h1 {
 }
 
 .red {
-    color: #ff4646;
+    color: var(--main-red);
    
 
 }
@@ -271,10 +277,11 @@ h2 {
 }
 
 .slider_section {
-   background-color: #ff4646;
+   background-color: var(--main-red);
    width: 100%;
     background-image: url(assets/bg-snow.png);
-    background-size:contain;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +302,7 @@ h2 {
 }
 
 .slider_container_text {
-    color: white;
+    color: var(--site-white);
     text-align: center;
     gap: 12px;
 }
@@ -311,7 +318,7 @@ h2 {
 }
 
 .slider span {
-    color: white;
+    color: var(--site-white);
     font-family: 'Montserrat';
     font-size: 80px;
     font-weight: 600;
@@ -343,15 +350,13 @@ h2 {
    align-items: flex-end;
    gap: 20px;
    width: 100%;
-  
-   
 
 }
 
 .btn {
 width: 56px;
 height: 56px;
-color: white;
+color: var(--site-white);
 border-radius: 20px;
  border: 1px solid #FFFFFF; 
 background:transparent;
@@ -361,13 +366,13 @@ background:transparent;
 }
 
 .btn:hover {
-    background-color: #FFFFFF;
-    color: #ff4646;
+    background-color: var(--site-white);
+    color: var(--main-red);
 }
 
 .best_gifs_section {
 
-    background-color: #ff4646;
+    background-color: var(--main-red);
     background-image: url(assets/bg-snow.png);
     background-size: cover;
     background-position: center;
@@ -390,7 +395,7 @@ background:transparent;
     gap: 20px;
 }
 .best_gifs_container_text {
-    color: #FFFFFF;
+    color: var(--site-white);
     gap: 12px;
     text-align: center;
   
@@ -424,6 +429,7 @@ background:transparent;
 
 
 }
+
 
 .card_img {
     width: 100%;
@@ -472,7 +478,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
-    background-color: #FFFFFF;
+    background-color: var(--site-white);
     border-radius: 20px;
     padding: 20px;
     gap: 8px;
@@ -481,10 +487,11 @@ h3 {
     
 }
 .best_gifs_container_card:hover {
-    color: #ff4646;
+    color: var(--main-red);
+    
 }
 .CTA_section {
-    background-color: #ff4646;
+    background-color: var(--main-red);
     background-image: url(assets/bg-snow.png), url(assets/bg-forest.png);
     background-position: center, center bottom;
     background-size: cover, contain;

@@ -20,8 +20,11 @@
 
 :root {
     --main-red: #ff4646;       
-    --site-white: #FFFFFF;
+    --site-white: rgb(255 255 255);
+    --alpha-white-40: rgb(255 255 255 / 0.4);
+    --alpha-white-20: rgb(255 255 255 / 0.2);
     --transition-duration: 0.2s;
+   
 }
 
 .section {
@@ -46,6 +49,15 @@ p {
     line-height: 1.48;
 }
 
+.action-small {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
 html,body {
     width: 100%;
     margin: 0;
@@ -56,8 +68,8 @@ html,body {
 }
 .wrapper {
     width: 100%;
-    max-width: 1440px; /* 🌟 ТО САМОЕ ОГРАНИЧЕНИЕ ИЗ ТЗ! */
-    margin: 0 auto;    /* 🌟 Идеально центрирует весь сайт на больших экранах */
+    max-width: 1440px; /* ОГРАНИЧЕНИЕ ИЗ ТЗ! */
+    margin: 0 auto;    /* центрирует весь сайт на больших экранах */
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -68,12 +80,7 @@ html,body {
     width: 100%;
     height: 64px;
     background-color: var(--site-white);
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 130%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+   
     display: flex;
     align-items: center;
     position: sticky;
@@ -206,6 +213,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+   
    
 
 }
@@ -369,7 +377,7 @@ h2 {
    align-items: center;
    gap: 20px;
    width: 100%;
-   bo
+   
 }
 
 .btn {
@@ -455,7 +463,7 @@ background:transparent;
     margin: 0;
 }
 
-h3 {
+.h3 {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;
@@ -507,10 +515,10 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: var(--site-white);
     overflow: hidden;
     padding-inline: 8px;
-    background-color: var(--site-white:);
+    background-color: var(--site-white);
 }
 
 .CTA_container {
@@ -549,7 +557,7 @@ h3 {
     align-items: center;
     padding: 8px 12px 12px 12px;
     border-radius: 20px;
-    background-color: #ffffff62;
+    background-color: var(--alpha-white-40);
 }
 
 .timer_container_item {
@@ -611,7 +619,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     gap: 60px;
-    background-color: var(--site-white:):;
+    background-color: var(--site-white);
 }
 
 .footer__contacts {
@@ -665,6 +673,94 @@ h3 {
     text-align: center;
 }
 
+.gift-page_section {
+    background-color: var(--main-red);
+    background-image: url(assets/bg-garland.png);
+    background-size:contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 60px 8px;
+}
+
+.gift-page_heder {
+    color: var(--site-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+.tabs-list {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 8px;
+    list-style: none;
+   
+
+}
+
+.tab-button{
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: var(--site-white);
+}
+
+.tab-button:hover {
+    background-color: var(--alpha-white-20);
+}
+.gift-page_container {
+    max-width: 1276px;
+    width: 100%;
+    margin: 0 auto;
+}
+.gift-page_grid{
+    display: grid;
+    list-style: none;
+    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    justify-items: center;
+    justify-content: center;
+
+
+}
+
+.gift-card {
+    background-color: #ecf3f8;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 342px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gift-card_img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+.gift-card_text {
+    background-color: var(--site-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 8px;
+    flex: 1;
+}
+
 @media (max-width: 1199px) {
  
     body {
@@ -713,5 +809,10 @@ h3 {
     width: 100%;
     height: 68vh;
 }
+ }
+@media (max-width: 380px) {
+    .desktop-br_gifts-page {
+        display: none; /* 🌟 Превращает жесткий перенос строки в обычный пробел! */
+    }
 
 }

@@ -742,7 +742,7 @@ background:transparent;
     overflow: hidden;
 }
 
-.gift-card__img {
+.gift-card__img-wrapper{
     width: 100%;
     height: 230px;
     object-fit: cover;
